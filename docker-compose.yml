@@ -11,5 +11,5 @@ services:
   whoami:
     image: jwilder/whoami
     environment:
-      - VIRTUAL_HOST=foo.bar.com
+      - VIRTUAL_HOST=nginx.shivanandpatil.co
       - VIRTUAL_PORT=8000
