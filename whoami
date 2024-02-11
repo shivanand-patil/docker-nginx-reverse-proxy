@@ -1,0 +1,8 @@
+docker network create step-by-step_default
+
+docker run -d \
+      --name whoami \
+      -e VIRTUAL_HOST=foo.bar.com \
+	  -e VIRTUAL_PORT=8000 \
+	  --network=step-by-step_default \
+      jwilder/whoami
